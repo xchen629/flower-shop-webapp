@@ -25,28 +25,27 @@ export default function App() {
 
       <main id="top">
         <section className="hero">
-          <h1>Fresh flowers, made with care</h1>
-          <p>Handcrafted bouquets for birthdays, weddings, and everyday moments.</p>
-          <a className="btn" href="#order">Place an order</a>
+          <h1>用心包好每一束花</h1>
+          <p>生日、婚礼、日常小确幸，都有手工花束陪你。</p>
+          <a className="btn" href="#order">立即下单</a>
         </section>
 
         <ProductGrid onAdd={add} />
 
         <section id="about" className="section alt">
-          <h2>About</h2>
+          <h2>关于我们</h2>
           <p className="narrow">
-            Hi, I'm the florist behind {SHOP_NAME}. Every arrangement is made to order
-            using seasonal flowers sourced from local growers. Tell me about the occasion and
-            I'll put together something special.
+            你好，我是{SHOP_NAME}的花艺师。每一束花都是按订单现做，
+            选用当季的本地鲜花。告诉我你的场合和喜好，我来为你搭配一束特别的花。
           </p>
         </section>
 
         <OrderForm items={items} total={total} />
 
         <section id="contact" className="section alt">
-          <h2>Contact</h2>
-          <p>Email: <a href={`mailto:${OWNER_EMAIL}`}>{OWNER_EMAIL}</a></p>
-          <p>Instagram: <a href={INSTAGRAM.url} target="_blank" rel="noopener noreferrer">{INSTAGRAM.handle}</a></p>
+          <h2>联系我们</h2>
+          <p>邮箱：<a href={`mailto:${OWNER_EMAIL}`}>{OWNER_EMAIL}</a></p>
+          <p>Instagram：<a href={INSTAGRAM.url} target="_blank" rel="noopener noreferrer">{INSTAGRAM.handle}</a></p>
         </section>
       </main>
 

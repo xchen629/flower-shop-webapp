@@ -13,13 +13,13 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.6;
 }
 
-h1, h2, .logo { font-family: "Playfair Display", Georgia, serif; }
+h1, h2, .logo { font-family: "Noto Serif SC", "Songti SC", Georgia, serif; }
 a { color: var(--accent); }
 
 .site-header {
@@ -47,7 +47,7 @@ nav a:hover { color: var(--accent); }
   display: inline-block; border: 0; cursor: pointer;
   background: var(--accent); color: #fff;
   padding: 12px 28px; border-radius: 999px;
-  font: 600 1rem "Inter", sans-serif; text-decoration: none;
+  font: 600 1rem "Noto Sans SC", sans-serif; text-decoration: none;
 }
 .btn:hover { background: var(--accent-dark); }
 
@@ -59,7 +59,7 @@ nav a:hover { color: var(--accent); }
 
 .grid {
   display: grid; gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 .card {
   background: var(--card); border-radius: 16px; overflow: hidden;
@@ -94,7 +94,7 @@ nav a:hover { color: var(--accent); }
 /* ---- Cart ---- */
 .cart-toggle {
   margin-left: 18px; border: 1px solid #e3cfd4; background: #fff;
-  border-radius: 999px; padding: 6px 14px; cursor: pointer; font: 600 .95rem "Inter", sans-serif;
+  border-radius: 999px; padding: 6px 14px; cursor: pointer; font: 600 .95rem "Noto Sans SC", sans-serif;
 }
 .cart-toggle:hover { border-color: var(--accent); }
 .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 20; }
@@ -127,3 +127,8 @@ nav a:hover { color: var(--accent); }
 
 .order-summary { background: var(--alt); border-radius: 12px; padding: 14px 16px; display: grid; gap: 8px; }
 .order-summary ul { margin: 0; padding-left: 18px; }
+
+/* ---- Product photos ---- */
+.card .photo { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; background: var(--alt); }
+.card .emoji { aspect-ratio: 3 / 4; display: grid; place-items: center; padding: 0; }
+.ci-photo { width: 52px; height: 52px; border-radius: 8px; object-fit: cover; }
